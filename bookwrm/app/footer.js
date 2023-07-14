@@ -7,7 +7,7 @@ export default function Mommy() {
             <div className="footer-left">
                 <img src="https://cdn.discordapp.com/attachments/769220443692990474/1067965403944468552/larrytheworm2.png" alt=""/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <div class="socials">
+                <div className="socials">
                     <Link href="#"><i className="fa-brands fa-facebook"></i></Link>
                     <Link href="#"><i className="fa-brands fa-twitter"></i></Link>
                     <Link href="#"><i className="fa-brands fa-youtube" id="youtube"></i></Link>

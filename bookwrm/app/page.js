@@ -2,7 +2,7 @@
 import {useState} from 'react'
 import { Inter } from 'next/font/google'
 import { resolve } from 'styled-jsx/css';
-
+import Section from './section.js'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,16 +18,19 @@ export default function Home() {
   )
 }
 
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
 
 const Larrys = () => {
   return (
   <fieldset className="homeinfo">
-    <section className="sectioninfo">
+    <section className='sectioninfo'>
       <img
         className="larry_backpack"
         src="https://cdn.discordapp.com/attachments/769220443692990474/1070107117207437363/Larry_Backpack_White_nobg.png"
       />
-      <div className="text1">
+      <div className="text1 font-tnr">
         <span>CROSS THE LIMITS OF YOUR KNOWLEDGE</span>
         <h2>Reclaim Education</h2>
         <p className="p1">
@@ -37,10 +40,25 @@ const Larrys = () => {
         </p>
       </div>
     </section>
-    <section className="sectioninfo">
-      <div className="text2">
+    <Section>
+      <img
+        className="larry_backpack"
+        src="https://cdn.discordapp.com/attachments/769220443692990474/1070107117207437363/Larry_Backpack_White_nobg.png"
+      />
+      <div className="text1 font-tnr">
+        <span>CROSS THE LIMITS OF YOUR KNOWLEDGE</span>
+        <h2 className=' font-semibold'>Reclaim Education</h2>
+        <p className="p1">
+          At Bookwrm, it doesn't matter what your background is, anyone is
+          welcome! No subscription or donations are required to access any
+          lecture.
+        </p>
+      </div>
+    </Section>
+    <Section>
+      <div className="text2 font-tnr">
         <span>LESSONS</span>
-        <h2>Access Free 24/7 Learning Videos</h2>
+        <h2 className=' font-semibold'>Access Free 24/7 Learning Videos</h2>
         <p className="p2">
           It's not just videos. Build a strong understanding of tough concepts
           through interactive lessons reviewed by proffessionals!
@@ -50,15 +68,15 @@ const Larrys = () => {
         className="Larry_Math"
         src="https://cdn.discordapp.com/attachments/769220443692990474/1070129520008495255/Larry_Math_White-removebg-preview.png"
       />
-    </section>
-    <section className="sectioninfo">
+    </Section>
+    <Section>
       <img
         className="Larry_Science"
         src="https://cdn.discordapp.com/attachments/769220443692990474/1070105945293717564/IMG_4206.jpg"
       />
-      <div className="text3">
+      <div className="text3 font-tnr">
         <span>NOTES</span>
-        <h2>Share your knowledge</h2>
+        <h2 className='font-semibold'>Share your knowledge</h2>
         <p className="p3">
           Help other students by sharing your notes in our community. We make sure
           that the best notes are displayed to everyone.
@@ -68,7 +86,7 @@ const Larrys = () => {
         className="Larry_Reading"
         src="https://cdn.discordapp.com/attachments/769220443692990474/1070130019638202378/Larry_Reading_White-removebg-preview.png"
       />
-    </section>
+    </Section>
   </fieldset>
   )
 }
@@ -98,5 +116,11 @@ const Lesson = (props) => {
     // <p>{show && 'hi'}</p>
     // <p>{!show && 'not hi'}</p>
     // </div>
+  )
+}
+
+const Li = ({ children }) => {
+  return (
+    <li className=' '>{children}</li>
   )
 }
