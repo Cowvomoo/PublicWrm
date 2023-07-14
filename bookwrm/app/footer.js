@@ -20,11 +20,11 @@ export default function Mommy() {
                     <h2 className="Lessons">Lessons</h2>
 
                     <ul className="box">
-                        <li><Link href="Algebra1.html">Algebra1</Link></li>
-                        <li><Link href="Geometry.html">Geometry</Link></li>
-                        <li><Link href="Algebra2.html">Algebra2</Link></li>
-                        <li><Link href="pre-calc.html">pre-calc</Link></li>
-                        <li><Link href="calcAB.html">calc AB</Link></li>
+                        <li><Link href="/math/Algebra1">Algebra1</Link></li>
+                        <li><Link href="/math/Geometry">Geometry</Link></li>
+                        <li><Link href="/math/Algebra2">Algebra2</Link></li>
+                        <li><Link href="/math/Precalculus">pre-calc</Link></li>
+                        <li><Link href="/math/APCalcAB">calc AB</Link></li>
                     </ul>
                 </li>
                 <li className="features">
